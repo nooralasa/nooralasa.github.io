@@ -84,6 +84,7 @@
 .grid-spotlight-text {
 	/* float: right; */
 	padding: 25px;
+	/* width: 50%; */
 	/* justify-content: right; */
 	/* display: inline-block; */
 }
@@ -310,7 +311,7 @@ span.nav-close:before {
 }
 
 /* Change spotlight flex orientation by screensize */
-@media (min-width: 700px) {
+@media (min-width: 875px) {
 	.grid-spotlight {
 	  flex-direction: column;
 	}
@@ -318,10 +319,14 @@ span.nav-close:before {
 	  flex-direction: row;
 	}
 	.grid-spotlight iframe {
-		width: 50%;
+		flex: 1;
 		max-width: 570px;
-		height: calc(100vw * 0.26);
 		max-height: 293px;
+		min-height: inherit;
+	}
+
+	.grid-spotlight-text {
+		flex: 1;
 	}
   }
 
