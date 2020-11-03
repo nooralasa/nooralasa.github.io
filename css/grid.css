@@ -45,6 +45,57 @@
 	margin: 0 auto;
 }
 
+#grid-spotlight {
+	width: 100%;
+}
+
+.grid-spotlight {
+	background: hsl(230, 8%, 27%);
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px;
+}
+
+.spotlight-group {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.grid-spotlight iframe {
+	width: auto;
+	/* margin: 0 auto; */
+	width: 100%;
+	height: calc(100vw * 0.46);
+	/* float: left;
+	width: 50%;
+	height: 100%; */
+}
+
+/* .grid-spotlight iframe {
+	width: 50%;
+	height: calc(100vw * 0.26);
+	width: 560px;
+	height: 315px;
+	max-width: 100%;
+} */
+
+.grid-spotlight-text {
+	/* float: right; */
+	padding: 25px;
+	/* justify-content: right; */
+	/* display: inline-block; */
+}
+
+.grid li:hover .grid-spotlight-text {
+	opacity: 0.7;
+}
+
+/* .grid li:hover div {
+	opacity: 0.7;
+} */
+
 .grid li {
 	width: 25%;
 	float: left;
@@ -257,6 +308,22 @@ span.nav-close:before {
 	right: 10px;
 	content: "\e604";
 }
+
+/* Change spotlight flex orientation by screensize */
+@media (min-width: 700px) {
+	.grid-spotlight {
+	  flex-direction: column;
+	}
+	.spotlight-group {
+	  flex-direction: row;
+	}
+	.grid-spotlight iframe {
+		width: 50%;
+		max-width: 570px;
+		height: calc(100vw * 0.26);
+		max-height: 293px;
+	}
+  }
 
 /* Example media queries (reduce number of columns and change slideshow layout) */
 
