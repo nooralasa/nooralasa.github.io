@@ -102,6 +102,7 @@
 		this.gridItems.forEach( function( item, idx ) {
 			item.addEventListener( 'click', function() {
 				document.getElementById('page-proj').scrollTo(0,0);
+				document.getElementById('page-work').scrollTo(0, 0);
 				self._openSlideshow( idx );
 			} );
 		} );
