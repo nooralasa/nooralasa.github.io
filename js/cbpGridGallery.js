@@ -143,6 +143,15 @@
 				self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
 			}
 		});
+
+		document.getElementById('page-work').addEventListener( 'scroll', function() {
+			if ( self.isSlideshowVisible ) {
+				document.getElementById('page-work').scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
+			}
+			else {
+				self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+			}
+		});
 	};
 
 	CBPGridGallery.prototype._openSlideshow = function( pos ) {
