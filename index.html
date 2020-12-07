@@ -23,15 +23,15 @@
 <body>
 	<!-- navigation -->
 	<nav class="pages-nav">
-		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-proj">Projects</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-work">Workshops</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-jor">My Journey</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-car">Career</a></div>
-		<div class="pages-nav__item"><a class="link link--page" href="#page-res">Research</a></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">TBD</a></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog</a></div>
-		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#home">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#projects">Projects</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#workshops">Workshops</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#journey">My Journey</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#career">Career</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#research">Research</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#random">TBD</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#blog">Blog</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#contact">Contact</a></div>
 		<div class="pages-nav__item pages-nav__item--social">
 			<a class="link link--social link--faded" href="https://www.linkedin.com/in/nooralasa/"><span class="linkedin"></span><span class="text-hidden">LinkedIn</span></a>
 			<a class="link link--social link--faded" href="https://github.com/nooralasa/"><span class="github"></span><span class="text-hidden">Github</span></a>
@@ -44,7 +44,7 @@
 	<div class="pages-stack">
 
 		<!-- home page -->
-		<div class="page" id="page-home">
+		<div class="page" id="home">
 			<!-- Header -->
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Noor Eddin Amer</h1>
@@ -76,7 +76,7 @@
 
 
 		<!-- projects page -->
-		<div class="page" id="page-proj">
+		<div class="page page-grid" id="projects">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Projects</h1>
 				<p class="bp-header__desc">
@@ -874,7 +874,7 @@
 
 
 		<!-- workshops page -->
-		<div class="page" id="page-work">
+		<div class="page page-grid" id="workshops">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Workshops</h1>
 				<p class="bp-header__desc">
@@ -1235,9 +1235,6 @@
 					</section><!-- // slideshow -->
 				</div><!-- // grid-gallery -->
 			</div>
-			<script src="js/imagesloaded.pkgd.min.js"></script>
-			<script src="js/masonry.pkgd.min.js"></script>
-			<script src="js/cbpGridGallery.js"></script>
 			<script>
 				new CBPGridGallery(document.getElementById('grid-gallery1'));
 			</script>
@@ -1246,7 +1243,7 @@
 
 
 		<!-- my journey page -->
-		<div class="page" id="page-jor">
+		<div class="page" id="journey">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">My Journey</h1>
 				<p class="bp-header__desc">Run through Noor's story.</a></p>
@@ -1279,21 +1276,8 @@
 			<img class="poster" src="assets/img/3.jpg" alt="img03" />
 		</div>
 
-		<!-- <script>
-			d3plus.viz().container("#hello").Timeline().domain([2001, 2010]).render();
-		</script> -->
-
-		<!-- <script>
-			$('.js-timeline').Timeline({
-				mode: 'vertical',
-				itemClass: 'box-item'
-			});
-		</script> -->
-
-
-
 		<!-- career page -->
-		<div class="page" id="page-car">
+		<div class="page" id="career">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Career</h1>
 				<p class="bp-header__desc">Senior Software Engineer at Oracle Cloud Commerce</a></p>
@@ -1331,7 +1315,7 @@
 
 
 		<!-- research page -->
-		<div class="page" id="page-res">
+		<div class="page" id="research">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Research</h1>
 				<p class="bp-header__desc">More to Come</a></p>
@@ -1344,7 +1328,7 @@
 
 
 
-		<div class="page" id="page-buy">
+		<div class="page" id="random">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">TBD</h1>
 				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
@@ -1354,7 +1338,7 @@
 			</header>
 			<img class="poster" src="assets/img/6.jpg" alt="img06" />
 		</div>
-		<div class="page" id="page-blog">
+		<div class="page" id="blog">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Blog</h1>
 				<p class="bp-header__desc">Not sure</a></p>
@@ -1364,7 +1348,7 @@
 			</header>
 			<img class="poster" src="assets/img/1.jpg" alt="img01" />
 		</div>
-		<div class="page" id="page-contact">
+		<div class="page" id="contact">
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Contact</h1>
 				<p class="bp-header__desc">Get in touch</a></p>

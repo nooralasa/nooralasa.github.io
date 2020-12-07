@@ -163,6 +163,9 @@
 
 	// opens a page
 	function openPage(id) {
+		// update url in browser to include page id
+		window.history.pushState({},"", id ? '#'+id : '');
+
 		var futurePage = id ? document.getElementById(id) : pages[current],
 			futureCurrent = pages.indexOf(futurePage),
 			stackPagesIdxs = getStackPagesIdxs(futureCurrent);
@@ -214,6 +217,14 @@
 		}
 
 		return idxs;
+	}
+
+	// Load a specific page if url includes an index
+	var index = ['#home', '#projects', '#workshops', '#journey', '#career', '#research', '#random', '#blog', '#contact'];
+	for (var i=0; i < index.length; i++) {
+		if(window.location.href.indexOf(index[i]) != -1) {
+			current = i;
+		}
 	}
 
 	init();

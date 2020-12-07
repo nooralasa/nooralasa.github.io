@@ -101,8 +101,7 @@
 		// open the slideshow when clicking on the main grid items
 		this.gridItems.forEach( function( item, idx ) {
 			item.addEventListener( 'click', function() {
-				document.getElementById('page-proj').scrollTo(0,0);
-				document.getElementById('page-work').scrollTo(0, 0);
+				document.querySelectorAll('.page-grid').forEach( item => { item.scrollTo(0,0); });
 				self._openSlideshow( idx );
 			} );
 		} );
@@ -135,23 +134,14 @@
 		} );
 
 		// trick to prevent scrolling when slideshow is visible
-		document.getElementById('page-proj').addEventListener( 'scroll', function() {
+		document.querySelectorAll('.page-grid').forEach( item => {item.addEventListener( 'scroll', function() {
 			if ( self.isSlideshowVisible ) {
-				document.getElementById('page-proj').scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
+				item.scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
 			}
 			else {
 				self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
 			}
-		});
-
-		document.getElementById('page-work').addEventListener( 'scroll', function() {
-			if ( self.isSlideshowVisible ) {
-				document.getElementById('page-work').scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
-			}
-			else {
-				self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
-			}
-		});
+		})});
 	};
 
 	CBPGridGallery.prototype._openSlideshow = function( pos ) {
