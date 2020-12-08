@@ -36,6 +36,8 @@
 :root {
   --background: #1d1e21;
   --page-background: #2a2b30;
+  --modal-background:  hsl(230, 8%, 27%);
+  --modal-background-faded: rgba(255, 255, 255, 0.38);
   --text: #cecece;
   --text-emphasized: #5c5edc;
   --text-title: #fff;
