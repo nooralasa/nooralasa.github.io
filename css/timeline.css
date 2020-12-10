@@ -21,6 +21,14 @@
 	position: relative;
 } 
 
+.cbp_tmtimeline p {
+	color: var(--text-secondary);
+} 
+
+.cbp_tmtimeline h2 {
+	color: var(--text);
+} 
+
 /* The line */
 .cbp_tmtimeline:before {
 	content: '';
@@ -28,8 +36,7 @@
 	top: 0;
 	bottom: 0;
 	width: 10px;
-    /* background: #afdcf8; */
-    background: var(--modal-background-faded);
+    background: var(--modal-light);
 	left: 20%;
 	margin-left: -10px;
 }
@@ -53,17 +60,17 @@
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
 	font-size: 2.9em;
-	color: var(--modal-background-faded);
+	color: var(--modal-dark);
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-	color: var(--modal-background);
+	color: var(--modal-light);
 }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 0 15px 25%;
-	background: var(--modal-background-faded);
+	background: var(--modal-light);
 	padding: 2em;
 	font-size: 1.2em;
 	font-weight: 300;
@@ -74,7 +81,7 @@
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-	background: var(--modal-background);
+	background: var(--modal-dark);
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 { 
@@ -92,13 +99,13 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: var(--modal-background-faded);
+	border-right-color: var(--modal-light);
 	border-width: 10px;
 	top: 10px;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-	border-right-color: var(--modal-background);
+	border-right-color: var(--modal-dark);
 }
 
 /* The icons */
@@ -114,11 +121,11 @@
 	line-height: 40px;
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
-	color: #fff;
-	background: var(--modal-background);
+	/* color: #fff; */
+	background: var(--modal-dark);
 	border-radius: 50%;
     /* box-shadow: 0 0 0 8px #afdcf8; */
-    box-shadow: 0 0 0 8px var(--modal-background-faded);
+    box-shadow: 0 0 0 8px var(--modal-light);
 	text-align: center;
 	left: 20%;
 	margin: 0 0 0 -25px;
@@ -174,13 +181,13 @@
 		right: auto;
 		left: 20px;
 		border-right-color: transparent;
-		border-bottom-color: var(--modal-background-faded);
+		border-bottom-color: var(--modal-light);
 		top: -20px;
 	}
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;
-		border-bottom-color: var(--modal-background);
+		border-bottom-color: var(--modal-dark);
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {
