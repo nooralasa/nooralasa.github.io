@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/nav.css" />
 	<link rel="stylesheet" type="text/css" href="css/grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+	<link rel="stylesheet" type="text/css" href="css/collapsible.css" />
 	<script src="js/modernizr.custom.js"></script>
 
 </head>
@@ -31,10 +32,10 @@
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#blog">Blog</a></div>
 		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#contact">Contact</a></div>
 		<div class="pages-nav__item pages-nav__item--social">
-			<a class="link link--social link--faded" href="https://www.linkedin.com/in/nooralasa/"><span class="linkedin"></span><span class="text-hidden">LinkedIn</span></a>
-			<a class="link link--social link--faded" href="https://github.com/nooralasa/"><span class="github"></span><span class="text-hidden">Github</span></a>
-			<a class="link link--social link--faded" href="assets/resume.pdf"><span class="resume"></span><span class="text-hidden">Resume</span></a>
-			<a class="link link--social link--faded" href="https://dspace.mit.edu/handle/1721.1/119588"><span class="thesis"></span><span class="text-hidden">Thesis</span></a>
+			<a target="_blank"  class="link link--social link--faded" href="https://www.linkedin.com/in/nooralasa/"><span class="linkedin"></span><span class="text-hidden">LinkedIn</span></a>
+			<a target="_blank"  class="link link--social link--faded" href="https://github.com/nooralasa/"><span class="github"></span><span class="text-hidden">Github</span></a>
+			<a target="_blank"  class="link link--social link--faded" href="assets/resume.pdf"><span class="resume"></span><span class="text-hidden">Resume</span></a>
+			<a target="_blank"  class="link link--social link--faded" href="https://dspace.mit.edu/handle/1721.1/119588"><span class="thesis"></span><span class="text-hidden">Thesis</span></a>
 		</div>
 	</nav>
 	<!-- /navigation-->
@@ -52,10 +53,10 @@
 				<h1 class="bp-header__title">Noor Eddin Amer</h1>
 				<h2 class="bp-header__desc">Developer; Entrepreneur; Educator; Learner</h2>
 				<nav class="bp-nav">
-					<a class="bp-nav__item bp-icon" href="https://www.linkedin.com/in/nooralasa/" data-info="LinkedIn"><div class="linkedin"></div><span>LinkedIn</span></a>
-					<a class="bp-nav__item bp-icon" href="https://github.com/nooralasa/" data-info="Github"><div class="github"></div><span>Github</span></a>
-					<a class="bp-nav__item bp-icon" href="assets/resume.pdf" data-info="Resume"><div class="resume"></div><span>Resume</span></a>
-					<a class="bp-nav__item bp-icon" href="https://dspace.mit.edu/handle/1721.1/119588" data-info="Thesis"><div class="thesis"></div><span>Thesis</span></a>
+					<a target="_blank" class="bp-nav__item bp-icon" href="https://www.linkedin.com/in/nooralasa/" data-info="LinkedIn"><div class="linkedin"></div><span>LinkedIn</span></a>
+					<a target="_blank" class="bp-nav__item bp-icon" href="https://github.com/nooralasa/" data-info="Github"><div class="github"></div><span>Github</span></a>
+					<a target="_blank" class="bp-nav__item bp-icon" href="assets/resume.pdf" data-info="Resume"><div class="resume"></div><span>Resume</span></a>
+					<a target="_blank" class="bp-nav__item bp-icon" href="https://dspace.mit.edu/handle/1721.1/119588" data-info="Thesis"><div class="thesis"></div><span>Thesis</span></a>
 				</nav>
 			</header>
 			<div class="about">
@@ -1260,7 +1261,7 @@
 			</label>
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">My Journey</h1>
-				<h2 class="bp-header__desc">Run through Noor's story.</a></h2>
+				<h2 class="bp-header__desc">A Run through of Noor's story.</a></h2>
 			</header>
 			<div class="timeline">
 				<ul class="cbp_tmtimeline">
@@ -1538,34 +1539,103 @@
 			</label>
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Career</h1>
-				<h2 class="bp-header__desc">Senior Software Engineer at Oracle Cloud Commerce</a></h2>
-				<p>
-					During my 2+ years as a Software Developer at Oracle, I have participated in the design, development, and maintenance of industry-grade software. Working on Oracle Commerce Cloud (OCC), I spent the first eight months of my career learning iOS development and contributing to the Assisted Selling Application. I later transitioned to working on a redesign of OCC's main product line: the Storefront.
-				</p>
-				<p>
-					Large retailers and telecom companies use Oracle Commerce Cloud to build and customize their e-commerce sites. Customers purchase OCC to access an out-of-the-box, hosted commerce site and contract third-party implementation partners who use OCC's headless commerce API, development tooling, and sample UI widgets to customize the Storefront. In addition to the hosted storefront and the commerce sdk, customers get access to an Admin platform (for managing catalogs, site settings, etc), an Agent platform for supporting customer service and call centers, and the Assisted Selling App to manage commerce flows in-store.
-				</p>
-				<p>
-					During my first eight months at Oracle, I learned iOS development with Swift and XCode, and worked on adding features to ASA, including tax treatment and store credit implementations. At the beginning of 2017, my team transitioned its focus from working on the iOS application to a global initiative of rearchitecting our main product line: the Oracle Cloud Commerce Storefront. It began with a prototype from a team in Belfast for a framework using React and Server-Side Rendering with the OCC APIs, and with that was born the Open Storefront Framework (OSF).
-				</p>
-				<p>
-					The Open Storefront Framework (OSF) has three goals in mind: improving performance, improving SEO (Search Engine Optimization), and improving the third-party implementation partner's development process. My team in Cambridge became in charge of Marcus' (the implementation partner) development experience and integrating OSF with the existing architecture.
-				</p>
-				<p>
-					To improve Marcus' development experience, we relied on yarn workspaces and created a command line interface to interact with the OCC endpoints, sync assets, and push Marcus' developed application to our servers. In addition, we had to design a new architecture for installing and serving Marcus' application in the Oracle Cloud.
-				</p>
-				<p>
-					In its existing architecture, OCC ran in two Java Virtual Machines, one serving the OCC Admin API and its UI and another serving OCC Storefront (both API and UI). Adding React and Server-Side Rendering required adding a Presentation node.js Server to the existing architecture that talked to the Storefront API and got its site settings from Admin. A coworker and I designed and fully implemented a dockerized application that we call the deployment controller.
-				</p>
-				<p>
-					The deployment controller manages the lifecycle of a deployed node.js OCC application. It exposes a REST API to talk to OCC Admin, receives Marcus' customized OCC applications, and builds and runs them in a green/blue deployment model to ensure continual availability. In a nutshell, I've designed and built the system to run the new OSF Storefront in the Oracle Cloud Infrastructure (OCI). The system that I've designed and built is currently running in OCI and serving customer storefronts. Through deploying the controller to OCI, I learned about Docker, Kubernetes, and other cloud technologies.
-				</p>
-				<p>
-					During those two years of developing the deployment controller and the logging solution for OSF, I grew accustomed to in-depth collaboration with a small team of four developers in Cambridge, as well as being the liaison for a global team distributed across three cities. I travelled to Belfast and Hyderabad to present our work in Cambridge and further that collaboration.
-				</p>
-				<p>
-					Given my natural affinity for presenting and public speaking, I became the go-to developer on the team to demo OSF internally and externally, including demoing the application in an early access session to implementation partners of OCC. I also worked with Oracle University and internal consultants on creating training for OCC developers. My work was recognized when I was promoted to Senior Software Engineer during my first two years at Oracle, an uncommon promotion at Oracle.
-				</p>
+				<h2 class="bp-header__desc">Noor's Professional Experience. View my <a target="_blank" href="https://www.linkedin.com/in/nooralasa/">LinkedIn</a></h2>.
+
+				<button class="collapsible">Oracle - Senior Software Engineer</button>
+				<div class="content">
+					<p>
+						During my 3+ years as a Software Developer at Oracle, I have participated in the design, development, and
+						maintenance of industry-grade software. Working on Oracle Commerce Cloud (OCC), I spent the first eight months of my
+						career learning iOS development and contributing to the Assisted Selling Application. I later transitioned to
+						working on a redesign of OCC's main product line: the Storefront.
+					</p>
+					<p>
+						Large retailers and telecom companies use Oracle Commerce Cloud to build and customize their e-commerce sites.
+						Customers purchase OCC to access an out-of-the-box, hosted commerce site and contract third-party implementation
+						partners who use OCC's headless commerce API, development tooling, and sample UI widgets to customize the
+						Storefront. In addition to the hosted storefront and the commerce sdk, customers get access to an Admin platform
+						(for managing catalogs, site settings, etc), an Agent platform for supporting customer service and call centers, and
+						the Assisted Selling App to manage commerce flows in-store.
+					</p>
+					<p>
+						During my first eight months at Oracle, I learned iOS development with Swift and XCode, and worked on adding
+						features to ASA, including tax treatment and store credit implementations. At the beginning of 2017, my team
+						transitioned its focus from working on the iOS application to a global initiative of rearchitecting our main product
+						line: the Oracle Cloud Commerce Storefront. It began with a prototype from a team in Belfast for a framework using
+						React and Server-Side Rendering with the OCC APIs, and with that was born the Open Storefront Framework (OSF).
+					</p>
+					<p>
+						The Open Storefront Framework (OSF) has three goals in mind: improving performance, improving SEO (Search Engine
+						Optimization), and improving the third-party implementation partner's development process. My team in Cambridge
+						became in charge of Marcus' (our persona for the implementation partner) development experience and integrating OSF with the
+						existing architecture.
+					</p>
+					<p>
+						To improve Marcus' development experience, we relied on yarn workspaces and created a command line interface to
+						interact with the OCC endpoints, sync assets, and push Marcus' developed application to our servers. In addition, we
+						had to design a new architecture for installing and serving Marcus' application in the Oracle Cloud.
+					</p>
+					<p>
+						In its existing architecture, OCC ran in two Java Virtual Machines, one serving the OCC Admin API and its UI and
+						another serving OCC Storefront (both API and UI). Adding React and Server-Side Rendering required adding a
+						Presentation node.js Server to the existing architecture that talked to the Storefront API and got its site settings
+						from Admin. A coworker and I designed and fully implemented a dockerized application that we call the deployment
+						controller.
+					</p>
+					<p>
+						The deployment controller manages the lifecycle of a deployed node.js OCC application. It exposes a REST API to talk
+						to OCC Admin, receives Marcus' customized OCC applications, and builds and runs them in a green/blue deployment
+						model to ensure continual availability. In a nutshell, I've designed and built the system to run the new OSF
+						Storefront in the Oracle Cloud Infrastructure (OCI). The system that I've designed and built is currently running in
+						OCI and serving customer storefronts. Through deploying the controller to OCI, I learned about Docker, Kubernetes,
+						and other cloud technologies.
+					</p>
+					<p>
+						During those two years of developing the deployment controller and the logging solution for OSF, I grew accustomed
+						to in-depth collaboration with a small team of four developers in Cambridge, as well as being the liaison for a
+						global team distributed across three cities. I travelled to Belfast and Hyderabad to present our work in Cambridge
+						and further that collaboration.
+					</p>
+					<p>
+						Given my natural affinity for presenting and public speaking, I became the go-to developer on the team to demo OSF
+						internally and externally, including demoing the application in an early access session to implementation partners
+						of OCC. I also worked with Oracle University and internal consultants on creating training for OCC developers. My
+						work was recognized when I was promoted to Senior Software Engineer during my first two years at Oracle, an uncommon
+						promotion at Oracle.
+					</p>
+				</div>
+				<br/>
+
+				<button class="collapsible">Vistaprint - Software Engineering Intern</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<br/>
+
+				<button class="collapsible">Google - Associate Product Management Intern</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<br/>
+
+				<button class="collapsible">Affectiva - Software Engineering Intern</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<br />
+				
+				<button class="collapsible">King Hussein Foundation - Research Intern</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
 			</header>
 		</div>
 
@@ -1579,11 +1649,39 @@
 			</label>
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Research</h1>
-				<h2 class="bp-header__desc">More to Come</a></h2>
-				<p class="info">
-					More coming soon
-				</p>
+				<h2 class="bp-header__desc">Noor's Research Experience. Read my <a target="_blank" href="https://dspace.mit.edu/handle/1721.1/119588">Master's Thesis</a></h2>.
+				<button class="collapsible">MIT Media Lab - LIME</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<br />
+				
+				<button class="collapsible">CSAIL - Pentimento Paper</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<br />
+				
+				<button class="collapsible">CSAIL - NLP Paper</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
+				<br />
+				
+				<button class="collapsible">McGovern - 9.660 Paper</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+				</div>
 			</header>
+			<script src="js/collapsible.js"></script>
 		</div>
 
 
