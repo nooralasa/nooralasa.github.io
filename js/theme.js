@@ -48,7 +48,7 @@ currentTime = new Date();
 hours = currentTime.getHours();
 
 // Set to light theme if between 7am and 7pm
-if (hours > 7 && hours < 19) {
+if (hours > 6 && hours < 18) {
     setLightTheme();
 } else {
     setDarkTheme();
