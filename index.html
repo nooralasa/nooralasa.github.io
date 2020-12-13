@@ -780,7 +780,7 @@
 											</p>
 											<br />
 											<p>
-												As an APM, I led a team of UX designers, UX researchers and engineers in the product discovery process.
+												As an APM, I led a team of UI designers, UX researchers and engineers in the product discovery process.
 												We explored ideas for presenting pricing trends and comparison.
 												The feature is now live on Google search, when searching for a hotel.
 											</p>
@@ -1533,111 +1533,149 @@
 
 		<!-- career page -->
 		<div class="page" id="career">
-			<label class="switch">
-				<input class="theme-switch" type="checkbox" onchange="switchTheme(this)">
-				<span class="slider round"></span>
-			</label>
-			<header class="bp-header cf">
-				<h1 class="bp-header__title">Career</h1>
-				<h2 class="bp-header__desc">Noor's Professional Experience. View my <a target="_blank" href="https://www.linkedin.com/in/nooralasa/">LinkedIn</a></h2>.
+            <label class="switch">
+                <input class="theme-switch" type="checkbox" onchange="switchTheme(this)">
+                <span class="slider round"></span>
+            </label>
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">Career</h1>
+                <h2 class="bp-header__desc">Noor's Professional Experience. View my <a target="_blank" href="https://www.linkedin.com/in/nooralasa/">LinkedIn</a>.</h2>
 
-				<button class="collapsible">Oracle - Senior Software Engineer</button>
-				<div class="content">
-					<p>
-						During my 3+ years as a Software Developer at Oracle, I have participated in the design, development, and
-						maintenance of industry-grade software. Working on Oracle Commerce Cloud (OCC), I spent the first eight months of my
-						career learning iOS development and contributing to the Assisted Selling Application. I later transitioned to
-						working on a redesign of OCC's main product line: the Storefront.
-					</p>
-					<p>
-						Large retailers and telecom companies use Oracle Commerce Cloud to build and customize their e-commerce sites.
-						Customers purchase OCC to access an out-of-the-box, hosted commerce site and contract third-party implementation
-						partners who use OCC's headless commerce API, development tooling, and sample UI widgets to customize the
-						Storefront. In addition to the hosted storefront and the commerce sdk, customers get access to an Admin platform
-						(for managing catalogs, site settings, etc), an Agent platform for supporting customer service and call centers, and
-						the Assisted Selling App to manage commerce flows in-store.
-					</p>
-					<p>
-						During my first eight months at Oracle, I learned iOS development with Swift and XCode, and worked on adding
-						features to ASA, including tax treatment and store credit implementations. At the beginning of 2017, my team
-						transitioned its focus from working on the iOS application to a global initiative of rearchitecting our main product
-						line: the Oracle Cloud Commerce Storefront. It began with a prototype from a team in Belfast for a framework using
-						React and Server-Side Rendering with the OCC APIs, and with that was born the Open Storefront Framework (OSF).
-					</p>
-					<p>
-						The Open Storefront Framework (OSF) has three goals in mind: improving performance, improving SEO (Search Engine
-						Optimization), and improving the third-party implementation partner's development process. My team in Cambridge
-						became in charge of Marcus' (our persona for the implementation partner) development experience and integrating OSF with the
-						existing architecture.
-					</p>
-					<p>
-						To improve Marcus' development experience, we relied on yarn workspaces and created a command line interface to
-						interact with the OCC endpoints, sync assets, and push Marcus' developed application to our servers. In addition, we
-						had to design a new architecture for installing and serving Marcus' application in the Oracle Cloud.
-					</p>
-					<p>
-						In its existing architecture, OCC ran in two Java Virtual Machines, one serving the OCC Admin API and its UI and
-						another serving OCC Storefront (both API and UI). Adding React and Server-Side Rendering required adding a
-						Presentation node.js Server to the existing architecture that talked to the Storefront API and got its site settings
-						from Admin. A coworker and I designed and fully implemented a dockerized application that we call the deployment
-						controller.
-					</p>
-					<p>
-						The deployment controller manages the lifecycle of a deployed node.js OCC application. It exposes a REST API to talk
-						to OCC Admin, receives Marcus' customized OCC applications, and builds and runs them in a green/blue deployment
-						model to ensure continual availability. In a nutshell, I've designed and built the system to run the new OSF
-						Storefront in the Oracle Cloud Infrastructure (OCI). The system that I've designed and built is currently running in
-						OCI and serving customer storefronts. Through deploying the controller to OCI, I learned about Docker, Kubernetes,
-						and other cloud technologies.
-					</p>
-					<p>
-						During those two years of developing the deployment controller and the logging solution for OSF, I grew accustomed
-						to in-depth collaboration with a small team of four developers in Cambridge, as well as being the liaison for a
-						global team distributed across three cities. I travelled to Belfast and Hyderabad to present our work in Cambridge
-						and further that collaboration.
-					</p>
-					<p>
-						Given my natural affinity for presenting and public speaking, I became the go-to developer on the team to demo OSF
-						internally and externally, including demoing the application in an early access session to implementation partners
-						of OCC. I also worked with Oracle University and internal consultants on creating training for OCC developers. My
-						work was recognized when I was promoted to Senior Software Engineer during my first two years at Oracle, an uncommon
-						promotion at Oracle.
-					</p>
-				</div>
-				<br/>
+                <button class="collapsible">Oracle - Senior Software Engineer</button>
+                <div class="content">
+                    <p>
+                        During my 3+ years as a Software Developer at Oracle, I have participated in the design, development, and
+                        maintenance of industry-grade software. Working on Oracle Commerce Cloud (OCC), I spent the first eight months of my
+                        career learning iOS development and contributing to the Assisted Selling Application. I later transitioned to
+                        working on a redesign of OCC's main product line: the Storefront.
+                    </p>
+                    <p>
+                        Large retailers and telecom companies use Oracle Commerce Cloud to build and customize their e-commerce sites.
+                        Customers purchase OCC to access an out-of-the-box, hosted commerce site and contract third-party implementation
+                        partners who use OCC's headless commerce API, development tooling, and sample UI widgets to customize the
+                        Storefront. In addition to the hosted storefront and the commerce sdk, customers get access to an Admin platform
+                        (for managing catalogs, site settings, etc), an Agent platform for supporting customer service and call centers, and
+                        the Assisted Selling App to manage commerce flows in-store.
+                    </p>
+                    <p>
+                        During my first eight months at Oracle, I learned iOS development with Swift and XCode, and worked on adding
+                        features to ASA, including tax treatment and store credit implementations. At the beginning of 2017, my team
+                        transitioned its focus from working on the iOS application to a global initiative of rearchitecting our main product
+                        line: the Oracle Cloud Commerce Storefront. It began with a prototype from a team in Belfast for a framework using
+                        React and Server-Side Rendering with the OCC APIs, and with that was born the Open Storefront Framework (OSF).
+                    </p>
+                    <p>
+                        The Open Storefront Framework (OSF) has three goals in mind: improving performance, improving SEO (Search Engine
+                        Optimization), and improving the third-party implementation partner's development process. My team in Cambridge
+                        became in charge of Marcus' (our persona for the implementation partner) development experience and integrating OSF with the
+                        existing architecture.
+                    </p>
+                    <p>
+                        To improve Marcus' development experience, we relied on yarn workspaces and created a command line interface to
+                        interact with the OCC endpoints, sync assets, and push Marcus' developed application to our servers. In addition, we
+                        had to design a new architecture for installing and serving Marcus' application in the Oracle Cloud.
+                    </p>
+                    <p>
+                        In its existing architecture, OCC ran in two Java Virtual Machines, one serving the OCC Admin API and its UI and
+                        another serving OCC Storefront (both API and UI). Adding React and Server-Side Rendering required adding a
+                        Presentation node.js Server to the existing architecture that talked to the Storefront API and got its site settings
+                        from Admin. A coworker and I designed and fully implemented a dockerized application that we call the deployment
+                        controller.
+                    </p>
+                    <p>
+                        The deployment controller manages the lifecycle of a deployed node.js OCC application. It exposes a REST API to talk
+                        to OCC Admin, receives Marcus' customized OCC applications, and builds and runs them in a green/blue deployment
+                        model to ensure continual availability. In a nutshell, I've designed and built the system to run the new OSF
+                        Storefront in the Oracle Cloud Infrastructure (OCI). The system that I've designed and built is currently running in
+                        OCI and serving customer storefronts. Through deploying the controller to OCI, I learned about Docker, Kubernetes,
+                        and other cloud technologies.
+                    </p>
+                    <p>
+                        During those two years of developing the deployment controller and the logging solution for OSF, I grew accustomed
+                        to in-depth collaboration with a small team of four developers in Cambridge, as well as being the liaison for a
+                        global team distributed across three cities. I travelled to Belfast and Hyderabad to present our work in Cambridge
+                        and further that collaboration.
+                    </p>
+                    <p>
+                        Given my natural affinity for presenting and public speaking, I became the go-to developer on the team to demo OSF
+                        internally and externally, including demoing the application in an early access session to implementation partners
+                        of OCC. I also worked with Oracle University and internal consultants on creating training for OCC developers. My
+                        work was recognized when I was promoted to Senior Software Engineer during my first two years at Oracle, an uncommon
+                        promotion at Oracle.
+                    </p>
+                </div>
+                <br/>
 
-				<button class="collapsible">Vistaprint - Software Engineering Intern</button>
-				<div class="content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
-				</div>
-				<br/>
+                <button class="collapsible">Vistaprint - Software Engineering Intern</button>
+                <div class="content">
+                    <p>
+                        I worked at Vistaprint, summer of 2016, in Waltham Massachusetts. I joined the Product Design and Technology team and worked 
+                        on a tool for country managers to add, remove, and edit dates on holiday calendars. 
+                    </p>
+                    <p>
+                        Project Description: Calendars generate substantial revenue for Vistaprint, particularly during the holiday season.
+                        While customers may customize and create calendar dates from Studio, all wall and desk calendars include a predetermined set 
+                        of dates and date display behaviors. These are unique to each locale--week start, weekday names, and holidays all require accurate localization and translation review. 
+                        The process for setting calendar date requirements has been prone to error; calendar dates are revisited and reviewed many times, by multiple stakeholders, annually. 
+                        PDT developers are currently responsible for creating, modifying, and maintaining this data—which is inefficient for both developers and country managers. 
+                        The goal of this project is to develop a full-stack web application by which regional experts may add, remove, and update calendar metadata.
+                        Our intention is to fully remodel the management workflow to eliminate developer involvement while also providing a guided and responsive self-service experience to our stakeholders.
+                    </p>
+                    <p>
+                        Over the summer, I developed a standalone web service to help country managers track holiday dates.
+                        I designed a database schema, a RESTful web API, and a User Interface, and implemented them with postgreSQL/express/node.js/React stack.
+                        The service was deployed on AWS. While building the service, I practiced Design Thinking while working with relevant stakeholders from 
+                        Country Managers, PDT Engineers, Product Owners and Localization Engineers. I also participated in agile development with daily stand-ups and using Kanban.
+                    </p>
+                </div>
+                <br/>
 
-				<button class="collapsible">Google - Associate Product Management Intern</button>
-				<div class="content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
-				</div>
-				<br/>
+                <button class="collapsible">Google - Associate Product Management Intern</button>
+                <div class="content">
+                    <p>
+                        I worked at Google in Mountain View, summer of 2015, as an Associate Product Management Intern.
+                        I worked with the Hotels team, formerly in charge of Hotel Finder, a product that was being integrated directly into Google Search.
+                        Motivated by the popularity of the pricing graphs in Google Flights, I was tasked with investigating the introduction of a similar feature for hotels.
+                    </p>
+                    <p>
+                        As an APM, I led a team of UI designers, UX researchers and engineers in the product discovery process. 
+                        We explored ideas for presenting pricing trends and comparison. 
+                        The feature is now live on Google search, when searching for a hotel.
+                    </p>
+                    <p>
+                        Through this unique experience, I learned what Product Management was, how to create a product that's valuable, feasible, usable, and viable.
+                        As a Product Manager, you're responsible for the product direction, but have little agency over building it. Thus the role is about persuasion, consensus-building,
+                        and doing whatever is possible to make the product successful. It involves working with customers, drafting requirements and working with internal stakeholders to 
+                        assure customer satisfaction. I also learned about Google as an organization, it's innovative culture, and engineer focus.
+                    </p>
+                </div>
+                <br/>
 
-				<button class="collapsible">Affectiva - Software Engineering Intern</button>
-				<div class="content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
-				</div>
-				<br />
-				
-				<button class="collapsible">King Hussein Foundation - Research Intern</button>
-				<div class="content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
-				</div>
-			</header>
-		</div>
+                <button class="collapsible">Affectiva - Software Engineering Intern</button>
+                <div class="content">
+                    <p>
+                        Affectiva, spun out of the MIT Media Lab in 2009, is a leading provider of emotion analytics.
+                        I joined Affectiva in 2014 for a summer internship. At the time, I worked on their Affdex Discovery product, 
+                        an online platform for moderated business advertisement studies. I designed and implemented an API providing emotion
+                        analytics to ad businesses. The platform was built with Ruby on Rails with a MySQL data source.
+                    </p>
+                </div>
+                <br />
+                
+                <button class="collapsible">King Hussein Foundation IRC - Research Intern</button>
+                <div class="content">
+                    <p>
+                        The King Hussein Foundation, Information and Research Center conducts socio-economic research to enable effective evidence-based planning and decision-making.
+                        The IRC conducts research and makes recommendations to practitioners and policy makers in Jordan and the Middle East.
+                        The IRC has made significant contributions by bringing public attention to a number of issues related to social development in Jordan and the region, particularly concerning children's rights, early childhood development and education, poverty, and gender-based violence.
+                    </p>
+                    <p>
+                        I interned at the IRC in the summer of 2013 in Amman. I reviewed and edited reports on women's rights, eco-tourism, and education in Jordan, 
+                        translated Arabic reports into English, and drafted proposals for future research.
+                    </p>
+                </div>
+            </header>
+        </div>
 
 
 
@@ -1649,7 +1687,7 @@
 			</label>
 			<header class="bp-header cf">
 				<h1 class="bp-header__title">Research</h1>
-				<h2 class="bp-header__desc">Noor's Research Experience. Read my <a target="_blank" href="https://dspace.mit.edu/handle/1721.1/119588">Master's Thesis</a></h2>.
+				<h2 class="bp-header__desc">Noor's Research Experience. Read my <a target="_blank" href="https://dspace.mit.edu/handle/1721.1/119588">Master's Thesis.</a></h2>
 				<button class="collapsible">MIT Media Lab - LIME</button>
 				<div class="content">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
