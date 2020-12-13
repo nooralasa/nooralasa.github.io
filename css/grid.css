@@ -20,7 +20,7 @@
 	margin: 0;
 }
 
-.grid-gallery figure img {
+.thumb-img {
 	display: block;
 	width: 100%;
 }
@@ -327,7 +327,8 @@ span.nav-close:before {
 		margin: 0;
 	}
 
-	.slideshow li figure img {
+	.large-img {
+		display: block;
 		width: auto;
 		margin: 0 auto;
 		max-width: 100%;
