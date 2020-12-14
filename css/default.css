@@ -351,18 +351,55 @@ canvas {
 
 /* ---- tsparticles container ---- */
 #tsparticles {
-    position: absolute;
+    position: relative;
     width: 100%;
 	height: 100%;
 }
 
 #particle-btn {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -22px;
-	margin-left: -114px;
+	transform: translate(-50%, -50%);
 }
+
+/* ---- collapsible style ---- */
+.collapsible {
+  background-color: var(--modal-light);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  box-shadow: 2px 2px var(--text-secondary);
+  font-size: 1.5em;
+  color: var(--text);
+}
+
+.active, .collapsible:hover {
+  background-color: var(--modal-dark);
+}
+
+.collapsible:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--modal-subtle);
+}
+
 
 @media screen and (max-width: 40em) {
 	.bp-header {
