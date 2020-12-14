@@ -327,7 +327,7 @@ input:checked + .slider:before {
 	display: flex;
 }
 
-.contact-container iframe {
+.contact-map {
 	width: 50%;
 	height: calc(100vw * 0.25);
 }
@@ -353,7 +353,7 @@ input:checked + .slider:before {
 	.contact-container {
 		flex-direction: column;
 	}
-	.contact-container iframe {
+	.contact-map {
 		width: 100%;
 		height: calc(100vw * 0.5);
 	}

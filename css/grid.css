@@ -64,7 +64,7 @@
 	height: 100%;
 }
 
-.grid-spotlight iframe {
+.video-spotlight {
 	width: auto;
 	width: 100%;
 	height: calc(100vw * 0.46);
@@ -299,7 +299,7 @@ span.nav-close:before {
 	.spotlight-group {
 	  flex-direction: row;
 	}
-	.grid-spotlight iframe {
+	.video-spotlight {
 		width: 50%;
 		max-width: 570px;
 		max-height: 315px;

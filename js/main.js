@@ -77,6 +77,9 @@
 			}
 			else {
 				classie.remove(page, 'page--inactive');
+
+				// lazy load any needed scripts
+				loadScripts(page.getAttribute('id'));
 			}
 
 			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
@@ -161,6 +164,27 @@
 		openPage();
 	}
 
+	// Load iframe
+	function loadIFrame(id, iframe) {
+		var iframe_wrapper = $(id);
+		//  Check to see if wrapper exists
+		if(iframe_wrapper.length){
+			iframe_wrapper.html(iframe);
+		}
+	}
+
+	// Load iframe
+	function loadScripts(pageid) {
+		if (pageid=='projects') {
+			loadIFrame('#projects-iframe', '<iframe src="https://www.youtube.com/embed/DN_9bx8mvKs" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		} else if (pageid=='workshops') {
+			loadIFrame('#workshops-iframe', '<iframe  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMITArabConference%2Fvideos%2F3711211915617688%2F&t=4002" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		} else if (pageid=='contact') {
+			loadIFrame('#contact-iframe', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47157.03040413608!2d-71.14792912489965!3d42.37844842626901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a5cb30cc5f%3A0xc53a8e6489686c87!2sCambridge%2C%20MA!5e0!3m2!1sen!2sus!4v1607833082479!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+
+		}
+	}
+
 	// opens a page
 	function openPage(id) {
 		// update url in browser to include page id
@@ -194,6 +218,7 @@
 			classie.remove(stack, 'pages-stack--open');
 			// reorganize stack
 			buildStack();
+			// loadScripts(futureCurrent);
 			isMenuOpen = false;
 		});
 	}
@@ -224,6 +249,7 @@
 	for (var i=0; i < index.length; i++) {
 		if(window.location.href.indexOf(index[i]) != -1) {
 			current = i;
+			// openPage();
 		}
 	}
 
