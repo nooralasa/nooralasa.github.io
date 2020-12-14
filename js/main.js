@@ -142,6 +142,11 @@
 
 	// opens the menu
 	function openMenu() {
+		// hide theme toggles
+		document.querySelectorAll('.switch').forEach(
+			toggle => { classie.add(toggle, 'hidden'); }
+		);
+
 		// toggle the menu button
 		classie.add(menuCtrl, 'menu-button--open')
 		// stack gets the class "pages-stack--open" to add the transitions
@@ -186,6 +191,8 @@
 				loadIFrame('#workshops-iframe', '<iframe  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMITArabConference%2Fvideos%2F3711211915617688%2F&t=4002" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 			} else if (pageid=='contact') {
 				loadIFrame('#contact-iframe', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47157.03040413608!2d-71.14792912489965!3d42.37844842626901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a5cb30cc5f%3A0xc53a8e6489686c87!2sCambridge%2C%20MA!5e0!3m2!1sen!2sus!4v1607833082479!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+			} else if (pageid=='random') {
+				loadIFrame('#random-script', '<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.8/dist/tsparticles.min.js"></script>');
 			}
 			
 			// Mark iframe as already loaded
@@ -229,6 +236,11 @@
 			// loadScripts(futureCurrent);
 			isMenuOpen = false;
 		});
+
+		// show theme toggles
+		document.querySelectorAll('.switch').forEach(
+			toggle => { classie.remove(toggle, 'hidden'); }
+		);
 	}
 
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
