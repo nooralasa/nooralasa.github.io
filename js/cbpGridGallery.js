@@ -116,17 +116,17 @@
 
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
-			if ( self.isSlideshowVisible ) {
-				var keyCode = ev.keyCode || ev.which;
+			if ( !self.isAnimating && self.isSlideshowVisible ) {
+				var keyCode = ev.key;
 
 				switch (keyCode) {
-					case 37:
+					case 'ArrowLeft':
 						self._navigate( 'prev' );
 						break;
-					case 39:
+					case 'ArrowRight':
 						self._navigate( 'next' );
 						break;
-					case 27:
+					case 'Escape':
 						self._closeSlideshow();
 						break;
 				}
@@ -149,7 +149,6 @@
 			toggle => { classie.add(toggle, 'hidden'); }
 		);
 
-		this.isSlideshowVisible = true;
 		this.current = pos;
 
 		document.getElementById('menu').className = 'menu-hidden';
@@ -177,6 +176,8 @@
 			var translateVal = Number( getViewportW() / 2 + this.nextItem.offsetWidth / 2 );
 			setTransform( this.nextItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
 		}
+
+		this.isSlideshowVisible = true;
 	};
 
 	CBPGridGallery.prototype._navigate = function( dir ) {

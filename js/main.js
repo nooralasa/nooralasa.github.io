@@ -122,8 +122,8 @@
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			if( !isMenuOpen ) return; 
-			var keyCode = ev.keyCode || ev.which;
-			if( keyCode === 27 ) {
+			var keyCode = ev.key;
+			if( keyCode === 'Escape' ) {
 				closeMenu();
 			}
 		} );
