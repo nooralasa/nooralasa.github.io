@@ -92,7 +92,7 @@ h2 {
 }
 
 .about {
-	padding: 0em 10vw 2em;
+	padding: 0em 10vw 1em;
 }
 
 /* Blueprint header */
@@ -193,6 +193,15 @@ h2 {
 
 .bp-nav a:hover:after {
 	color: var(--text);
+}
+
+.explore {
+	animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    position: relative;
+    animation-name: bounce-3;
+    animation-timing-function: ease;
 }
 
 /* Theme Switch Styles */
