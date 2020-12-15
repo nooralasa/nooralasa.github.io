@@ -96,7 +96,7 @@
 .cbp_tmtimeline > li .cbp_tmicon {
 	width: 40px;
 	height: 40px;
-	speak: none;
+	font-family: 'icomoon';
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -115,20 +115,28 @@
 	margin: 0 0 0 -25px;
 }
 
-.cbp_tmicon-phone:before {
-	content: "\e000";
+.cbp_tmicon-key:before {
+	content: "\f084";
 }
 
-.cbp_tmicon-screen:before {
-	content: "\e001";
+.cbp_tmicon-home:before {
+	content: "\e906";
 }
 
-.cbp_tmicon-mail:before {
-	content: "\e002";
+.cbp_tmicon-birth:before {
+	content: "\f1fd";
 }
 
-.cbp_tmicon-earth:before {
-	content: "\e003";
+.cbp_tmicon-child:before {
+	content: "\f1ae";
+}
+
+.cbp_tmicon-school:before {
+	content: "\f19c";
+}
+
+.cbp_tmicon-work:before {
+	content: "\f0f2";
 }
 
 /* Example Media Queries */

@@ -1,17 +1,3 @@
-/* General Blueprint Style */
-
-@font-face {
-	font-family: 'bpicons';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../assets/fonts/bpicons/bpicons.eot');
-	src: url('../assets/fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/bpicons/bpicons.woff') format('woff'), url('../assets/fonts/bpicons/bpicons.ttf') format('truetype'), url('../assets/fonts/bpicons/bpicons.svg#bpicons') format('svg');
-}
-
-
-/* Made with http://icomoon.io/ */
-
-
 /* Resets */
 
 *,
@@ -34,7 +20,7 @@
 }
 
 /* dark theme */
-:root {
+/* :root {
   --background: #1d1e21;
   --page-background: #2C2A2D;
 
@@ -49,10 +35,10 @@
 
   --icon-secondary: #4f4f64;
   --menu-button: #a3a0ac;
-}
+} */
 
 /* light theme */
-/* :root {
+:root {
   --background: #E8E8E8;
   --page-background: #e0e0e0;
 
@@ -67,7 +53,7 @@
 
   --icon-secondary: #4a494b;
   --menu-button: #88868a;
-} */
+}
 
 /* Main styles */
 
@@ -104,7 +90,6 @@ h2 {
 	font-weight: normal;
 	font-size: 1.5em;
 }
-
 
 .about {
 	padding: 0em 10vw 2em;
@@ -206,55 +191,8 @@ h2 {
 	background: var(--text-emphasized);
 }
 
-.bp-icon > div {
-	margin: 1em 1em;
-}
-
-.bp-icon:after {
-	font-family: 'bpicons';
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	text-align: center;
-	text-transform: none;
-	color: var(--text-emphasized);
-	-webkit-font-smoothing: antialiased;
-
-	speak: none;
-}
-
-.bp-nav .bp-icon:after {
-	line-height: 2.4;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-indent: 0;
-}
-
 .bp-nav a:hover:after {
 	color: var(--text);
-}
-
-.bp-icon--next:after {
-	content: '\e000';
-}
-
-.bp-icon--drop:after {
-	content: '\e001';
-}
-
-.bp-icon--archive:after {
-	content: '\e002';
-}
-
-.bp-icon--about:after {
-	content: '\e003';
-}
-
-.bp-icon--prev:after {
-	content: '\e004';
 }
 
 /* Theme Switch Styles */
@@ -324,6 +262,32 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.sun {
+	position: absolute;
+	z-index: 2;
+	font-family: 'icomoon', Arial, sans-serif;
+	font-size: 1.3em;
+	color: rgb(202, 139, 20);
+	transform: translate(156%, 30%);
+}
+
+.sun:before {
+	content: '\f185';
+}
+
+.moon {
+	position: absolute;
+	z-index: 2;
+	font-family: 'icomoon', Arial, sans-serif;
+	font-size: 1.3em;
+	color: rgb(97, 1, 97);
+	transform: translate(50%, 30%);
+}
+
+.moon:before {
+	content: '\f186';
+}
+
 .hidden {
 	visibility: hidden;
 }
@@ -343,6 +307,27 @@ input:checked + .slider:before {
 	width: 50%;
 }
 
+.contact-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-icon {
+	margin: 0.75em 0.5em 0.75em 0;
+}
+
+.location:before {
+	content: "\f041";
+}
+
+.email:before {
+	content: "\f0e0";
+}
+
+.phone:before {
+	content: "\f095";
+}
+
 /* tsParticle Styling */
 canvas {
     display: block;
@@ -358,6 +343,7 @@ canvas {
 
 #particle-btn {
 	position: absolute;
+	text-align: center;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);

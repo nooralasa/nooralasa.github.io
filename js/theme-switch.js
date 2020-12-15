@@ -2,11 +2,17 @@ function switchDark() {
     document.querySelectorAll('.theme-switch').forEach(
         checkBox => { checkBox.checked = true; }
     );
+    document.querySelectorAll('.theme-icon').forEach(
+        icon => { classie.add(icon, 'sun'); classie.remove(icon, 'moon'); }
+    );
 };
 
 function switchLight() {
     document.querySelectorAll('.theme-switch').forEach(
         checkBox => { checkBox.checked = false; }
+    );
+    document.querySelectorAll('.theme-icon').forEach(
+        icon => { classie.add(icon, 'moon'); classie.remove(icon, 'sun'); }
     );
 };
 

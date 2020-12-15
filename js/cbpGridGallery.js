@@ -145,6 +145,10 @@
 	};
 
 	CBPGridGallery.prototype._openSlideshow = function( pos ) {
+		document.querySelectorAll('.switch').forEach(
+			toggle => { classie.add(toggle, 'hidden'); }
+		);
+
 		this.isSlideshowVisible = true;
 		this.current = pos;
 
@@ -282,6 +286,10 @@
 	}
 
 	CBPGridGallery.prototype._closeSlideshow = function( pos ) {
+		document.querySelectorAll('.switch').forEach(
+			toggle => { classie.remove(toggle, 'hidden'); }
+		);
+
 		// remove class slideshow-open from the grid gallery elem
 		classie.removeClass( this.el, 'slideshow-open' );
 		// remove class animatable from the slideshow grid

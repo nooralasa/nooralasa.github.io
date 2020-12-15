@@ -1,10 +1,10 @@
 @font-face {
-	font-family: 'fontawesome';
-	src:url('../assets/fonts/fontawesome/fontawesome.eot?-e43dk9');
-	src:url('../assets/fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
-		url('../assets/fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
-		url('../assets/fonts/fontawesome/fontawesome.ttf?-e43dk9') format('truetype'),
-		url('../assets/fonts/fontawesome/fontawesome.svg?-e43dk9#fontawesome') format('svg');
+	font-family: 'icomoon';
+	src:url('../assets/fonts/icomoon/icomoon.eot?-e43dk9');
+	src:url('../assets/fonts/icomoon/icomoon.eot?#iefix-e43dk9') format('embedded-opentype'),
+		url('../assets/fonts/icomoon/icomoon.woff?-e43dk9') format('woff'),
+		url('../assets/fonts/icomoon/icomoon.ttf?-e43dk9') format('truetype'),
+		url('../assets/fonts/icomoon/icomoon.svg?-e43dk9#fontawesome') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } /* Made with http://icomoon.io/app */
@@ -286,32 +286,30 @@ html.js,
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 
-.linkedin:before {
-	content: "\eaca";
-	font-family: 'fontawesome';
+.icomoon {
+	font-family: 'icomoon', Arial, sans-serif;
 	font-weight: normal;
 	font-size: 1.5em;
 }
 
+.nav-icon {
+	transform: translate(30%, 60%);
+}
+
+.linkedin:before {
+	content: "\f0e1";
+}
+
 .github:before {
-	content: "\eab0";
-	font-family: 'fontawesome';
-	font-weight: normal;
-	font-size: 1.5em;
+	content: "\f09b";
 }
 
 .resume:before {
 	content: "\e923";
-	font-family: 'fontawesome';
-	font-weight: normal;
-	font-size: 1.5em;
 }
 
 .thesis:before {
-	content: "\e925";
-	font-family: 'fontawesome';
-	font-weight: normal;
-	font-size: 1.5em;
+	content: "\f023";
 }
 
 @media screen and (max-width: 60em) {
