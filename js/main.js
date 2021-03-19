@@ -264,9 +264,6 @@
 		return idxs;
 	}
 
-	var explore = document.getElementById('#explore');
-	explore.addEventListener("click", openMenu);
-
 	// Load a specific page if url includes an index
 	var index = ['#home', '#projects', '#workshops', '#journey', '#career', '#research', '#random', '#contact'];
 	for (var i=0; i < index.length; i++) {

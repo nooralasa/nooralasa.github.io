@@ -205,32 +205,6 @@ html.js,
 	max-height: 80%;
 }
 
-.down:before {
-	content: '\f078';
-	font-size: 2em;
-}
-
-.jump {
-	width: 100%;
-	text-align: center;
-	cursor: pointer;
-	margin-bottom: 2em;
-	animation: jump 2s 5s infinite cubic-bezier(.84,-0.54,.31,1.19);
-}
- 
-@keyframes jump {
-	0% {
-		transform: none;
-	}
-	50% {
-		transform: translateY(2em);
-	}
-}
-  
-.start-now, .start-now:after {
-	animation-delay: 0s;
-}
-
 /* Menu button */
 
 .menu-button {
